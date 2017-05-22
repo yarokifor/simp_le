@@ -9,7 +9,7 @@ readme = codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8').read()
 version = '0'  # set static for now
 
 install_requires = [
-    'acme>=0.4.1,<0.6',
+    'acme<=0.14.1,>0.14.0',
     'cryptography',
     'pyOpenSSL',
     'pytz',
@@ -34,12 +34,12 @@ tests_require = [
 setuptools.setup(
     name='simp_le',
     version=version,
-    author='Jakub Warmuz',
-    author_email='jakub@warmuz.org',
+    author='Yaro Kifor',
+    author_email='ykifor@netsville.com',
     description="Simple Let's Encrypt Client",
     long_description=readme,
     license='GPLv3',
-    url='https://github.com/kuba/simp_le',
+    url='https://github.com/yarokifor/simp_le',
     py_modules=['simp_le'],
     install_requires=install_requires,
     extras_require={
